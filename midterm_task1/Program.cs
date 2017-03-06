@@ -13,23 +13,18 @@ namespace midterm_task1
         {
             string arr = Console.ReadLine();
             string[] arrr = arr.Split(' ');
-            int[] myInts = Array.ConvertAll(arrr, int.Parse);
-            for (int i = 0; i < myInts.Length; ++i)
+            int[] integers = Array.ConvertAll(arrr, int.Parse);
+            for (int i = 0; i < integers.Length; ++i)
             {
-                if (myInts [i]%1000 == 0 && myInts [i] % 15 != 0)
+                if (integers [i]%1000 == 0 && integers [i] % 15 != 0)
                 {
-                    int num = myInts[i] / 1000;
+                    int num = integers[i] / 1000;
                     if (num%10 != 0)
                     {
-                        Console.WriteLine(myInts[i]);
-                        Console.WriteLine(' ');
+                        Console.WriteLine(integers[i]);
                     } 
-                    
-                   
-                }
-                
-            }
-                 
+                }                
+            }                 
             Console.ReadKey();
 
         }
